@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "270044321732",
+    "project_id": "right-steps-a04af",
+    "storage_bucket": "right-steps-a04af.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270044321732:android:c8446bd9c33e7eec047691",
+        "android_client_info": {
+          "package_name": "com.example.flutter_right_setpes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-IkfGfx-nMOiVgAY5RQLuJhP3BJ5CNQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
