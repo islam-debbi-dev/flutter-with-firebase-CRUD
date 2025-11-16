@@ -1,18 +1,12 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_right_setpes/firebase_options.dart';
 
 import 'routers/app_router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-      // options: FirebaseOptions(
-      //   apiKey: "YOUR_API_KEY",
-      //   appId: "YOUR_APP_ID",
-      //   messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-      //   projectId: "YOUR_PROJECT_ID",
-      // ),
-      );
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   runApp(MyApp(appRouter: AppRouter()));
 }
