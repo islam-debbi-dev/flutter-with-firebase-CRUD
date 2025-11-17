@@ -1,18 +1,17 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_right_setpes/firebase_options.dart';
-
+import 'firebase_options.dart';
 import 'routers/app_router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-
   runApp(MyApp(appRouter: AppRouter()));
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key, required this.appRouter});
+
   final AppRouter appRouter;
 
   @override
